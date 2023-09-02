@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "585531252565",
+    "project_id": "matjarkitty-610ab",
+    "storage_bucket": "matjarkitty-610ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585531252565:android:5267a6984d04c8ab3259dc",
+        "android_client_info": {
+          "package_name": "online.digistacks.kitty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585531252565-j9f1aiatn33u0i1chod4is7lsmj0uq60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwrW7NcnExM53KRYzUB7Ki53VdFLxUEVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585531252565-j9f1aiatn33u0i1chod4is7lsmj0uq60.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "585531252565-im501hogj1olt6ka3kl6enbh9683ekeg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "online.digistacks.kitty"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
