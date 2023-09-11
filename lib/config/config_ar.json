@@ -286,7 +286,7 @@
     "featured":false,
     "image":"",
     "showOnlyImage":false,
-    "showStockStatus":true,
+    "showStockStatus":false,
     "paddingBGP":{
     "left":0,
     "right":0,
@@ -367,7 +367,7 @@
     "parallaxImageRatio":1.2,
     "showCartIcon":true,
     "featured":false,
-    "showStockStatus":true,
+    "showStockStatus":false,
     "name":"قسم القطط",
     "productListItemHeight":125,
     "enableAutoSliding":false,
@@ -400,7 +400,7 @@
     "featured":false,
     "image":"",
     "showOnlyImage":false,
-    "showStockStatus":true,
+    "showStockStatus":false,
     "paddingBGP":{
     "left":0,
     "right":0,

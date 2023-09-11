@@ -5,4 +5,3 @@ NSLocationWhenInUseUsageDescription = "Získejte svou aktuální polohu pro doru
 NSMicrophoneUsageDescription = "Chtěli bychom mít přístup k mikrofonu, abychom mohli nahrávat hlasové zprávy";
 NSPhotoLibraryAddUsageDescription = "Chtěli bychom mít přístup k ukládání obrázků/videí ve vaší knihovně fotografií";
 NSPhotoLibraryUsageDescription = "Tato aplikace vyžaduje přístup do knihovny fotografií, aby mohla vybrat profilovou fotku, která bude použita jako obrázek chatu pro funkci chatu.";
-NSUserTrackingUsageDescription = "Tento identifikátor bude použit k doručování personalizovaných reklam. &quot;Požádejte aplikaci, aby nesledovala&quot; omezí schopnost reklamní sítě'doručovat vám relevantní reklamy, ale nesníží počet reklam, které obdržíte. ";

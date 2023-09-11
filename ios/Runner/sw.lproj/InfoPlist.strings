@@ -5,4 +5,3 @@ NSLocationWhenInUseUsageDescription = "Pata eneo lako la sasa kwa usafirishaji";
 NSMicrophoneUsageDescription = "Tungependa kufikia maikrofoni ili kuruhusu kurekodi ujumbe wa sauti";
 NSPhotoLibraryAddUsageDescription = "Tungependa ufikiaji wa kuhifadhi Picha/Video kwenye Maktaba yako ya Picha";
 NSPhotoLibraryUsageDescription = "Programu hii inahitaji ufikiaji wa maktaba ya picha ili kuchagua picha ya wasifu ambayo itatumika kama picha ya gumzo kwa Kipengele cha Gumzo.";
-NSUserTrackingUsageDescription = "Kitambulisho hiki kitatumika kukuletea matangazo yaliyobinafsishwa. \"Uliza Programu Isikufuatilie\" itapunguza uwezo wa mtandao wa Tangazo wa'kuwasilisha matangazo muhimu kwako lakini haitapunguza idadi ya matangazo unayopokea.";

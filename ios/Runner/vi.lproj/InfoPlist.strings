@@ -5,4 +5,3 @@ NSLocationAlwaysAndWhenInUseUsageDescription = "Cần quyền truy cập vị tr
 NSMicrophoneUsageDescription = "Cần quyền truy cập mic để ghi âm tin nhắn thoại";
 NSPhotoLibraryAddUsageDescription = "Cần quyền truy cập thư viện để lưu lại hình ảnh";
 NSPhotoLibraryUsageDescription = "Ứng dụng cần truy cập vào thư viện ảnh để chọn ảnh đại diện cho tính năng chat.";
-NSUserTrackingUsageDescription = "Mã định danh sẽ được dùng để hiển thị quảng cáo liên quan đến bạn. \"Yêu cầu ứng dụng không theo dõi\" sẽ giới hạn khả năng hiển thị quảng cáo liên quan đến bạn nhưng sẽ không giảm số lượng quảng cáo được hiển thị.";

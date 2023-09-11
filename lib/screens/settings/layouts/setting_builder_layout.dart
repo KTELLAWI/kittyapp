@@ -6,13 +6,14 @@ import 'views/setting_layout_style01_widget.dart';
 
 extension SettingStyleExt on SettingStyle {
   Widget builder(DataSettingScreen dataSettings) {
-    switch (this) {
-      case SettingStyle.style01:
-        return SettingLayoutStyle01Widget(dataSettings: dataSettings);
-      case SettingStyle.normal:
-      default:
-        return SettingLayoutNormalWidget(dataSettings: dataSettings);
-    }
+     return SettingLayoutStyle01Widget(dataSettings: dataSettings);
+    // switch (this) {
+    //   case SettingStyle.style01:
+    //     return SettingLayoutStyle01Widget(dataSettings: dataSettings);
+    //   case SettingStyle.normal:
+    //   default:
+    //     return SettingLayoutNormalWidget(dataSettings: dataSettings);
+    // }
   }
 }
 

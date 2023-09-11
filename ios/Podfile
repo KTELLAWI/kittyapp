@@ -61,10 +61,10 @@ post_install do |installer|
   end
 end
 
-target 'OneSignalNotificationServiceExtension' do
-  use_frameworks!
-  pod 'OneSignalXCFramework', '>= 3.4.3', '< 4.0'
-end
+# target 'OneSignalNotificationServiceExtension' do
+#   use_frameworks!
+#   pod 'OneSignalXCFramework', '>= 3.4.3', '< 4.0'
+# end
 
 # Fixes Flutter.framework in shell script build phase '[CP] Embed Pods Frameworks' error
 install! 'cocoapods', :disable_input_output_paths => true

@@ -7,7 +7,7 @@ import '../common/constants.dart';
 import '../frameworks/shopify/services/shopify_mixin.dart';
 import '../frameworks/wordpress/services/wordpress_mixin.dart';
 // import '../modules/advertisement/index.dart' show AdvertisementServiceImpl;
-import '../modules/onesignal/one_signal_notification_service.dart';
+// import '../modules/onesignal/one_signal_notification_service.dart';
 import '../modules/tera_wallet/services/wallet_service_mixin.dart';
 import 'advertisement/advertisement_service.dart';
 import 'chat/all_chat_services.dart';
@@ -41,8 +41,8 @@ class Services
     NotificationService notificationService = NotificationServiceImpl();
     if (isIos || isAndroid) {
       if (kOneSignalKey['enable'] ?? false) {
-        notificationService =
-            OneSignalNotificationService(appID: kOneSignalKey['appID']);
+        // notificationService =
+        //     OneSignalNotificationService(appID: kOneSignalKey['appID']);
       } else {
         if (_instance.firebase.isEnabled) {
           notificationService = FirebaseNotificationService();

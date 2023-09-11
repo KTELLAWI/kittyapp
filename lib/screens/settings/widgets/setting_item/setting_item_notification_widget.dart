@@ -40,7 +40,7 @@ class SettingNotificationWidget extends StatelessWidget {
       size: 24,
     );
 
-    const activeColor = Color(0xFF609062);
+    const activeColor = Color(0xFF);
     final messageWidget = SettingItemWidget(
       cardStyle: cardStyle,
       icon: CupertinoIcons.list_bullet,
@@ -61,7 +61,7 @@ class SettingNotificationWidget extends StatelessWidget {
                     child: icon,
                   ),
                   value: model.enable,
-                  activeColor: activeColor,
+                  activeColor: Theme.of(context).primaryColor,
                   onChanged: (value) => _onChanged(context, model, value),
                   title: title,
                 ),
@@ -84,7 +84,7 @@ class SettingNotificationWidget extends StatelessWidget {
                     child: icon,
                   ),
                   value: model.enable,
-                  activeColor: activeColor,
+                  activeColor: Theme.of(context).primaryColor,
                   onChanged: (value) => _onChanged(context, model, value),
                   title: title,
                 ),
@@ -107,7 +107,7 @@ class SettingNotificationWidget extends StatelessWidget {
                     child: icon,
                   ),
                   value: model.enable,
-                  activeColor: activeColor,
+                  activeColor: Theme.of(context).primaryColor,
                   onChanged: (value) => _onChanged(context, model, value),
                   title: title,
                 ),
@@ -123,7 +123,7 @@ class SettingNotificationWidget extends StatelessWidget {
                 child: SwitchListTile(
                   secondary: icon,
                   value: model.enable,
-                  activeColor: activeColor,
+                  activeColor: Theme.of(context).primaryColor,
                   onChanged: (value) => _onChanged(context, model, value),
                   title: title,
                 ),

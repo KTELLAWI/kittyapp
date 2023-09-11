@@ -87,14 +87,22 @@ class HeaderView extends StatelessWidget {
               InkResponse(
                 onTap: callback,
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
+                  padding: const EdgeInsets.all(0.0),
+                  child: Container(
+                    padding:EdgeInsets.all(1),
+                       decoration: BoxDecoration(
+                    color: Theme.of(context).primaryColor,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                    child:Text(
                     S.of(context).seeAll,
                     style: Theme.of(context)
                         .textTheme
                         .bodySmall!
-                        .copyWith(color: Theme.of(context).primaryColor),
+                        .copyWith(color: Colors.white),
                   ),
+                  )
+                  
                 ),
               ),
           ],
