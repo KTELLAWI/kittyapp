@@ -245,19 +245,19 @@ fetchData();
                                               
                           // })
 
-                            if(listo!.isNotEmpty)
-                              Row(
-                            children:[
-                               Image.network('https://cdn.shopify.com/s/files/1/0810/7350/4566/files/1.png?v=1693233310', width: 60, height: 60),
-                               SizedBox(width: 5),
-                                Flexible(
-            child:
-                               Text(listo![0]!["value"].toString(),
-                                maxLines: 2, // Set maximum lines to 2
-                              //overflow: TextOverflow.ellipsis,
-                              textAlign: TextAlign.right),)
-                            ]
-                          ),
+            //                 if(listo!.isNotEmpty)
+            //                   Row(
+            //                 children:[
+            //                    Image.network('https://cdn.shopify.com/s/files/1/0810/7350/4566/files/1.png?v=1693233310', width: 60, height: 60),
+            //                    SizedBox(width: 5),
+            //                     Flexible(
+            // child:
+            //                    Text(listo![0]!["value"].toString(),
+            //                     maxLines: 2, // Set maximum lines to 2
+            //                   //overflow: TextOverflow.ellipsis,
+            //                   textAlign: TextAlign.right),)
+            //                 ]
+            //               ),
                           SizedBox(
                             height:3
                           ), if(listo!.isNotEmpty)

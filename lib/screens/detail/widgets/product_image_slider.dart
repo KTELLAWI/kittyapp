@@ -219,17 +219,22 @@ class _ProductImageSliderState extends State<ProductImageSlider> {
         }
         return GestureDetector(
           onTap: () => _onShowGallery(context, index),
-          child: Hero(
+          child:
+          Padding(
+            padding:EdgeInsets.all(40),
+            child:Hero(
             tag: 'slider_hero_tag_${itemList[index]}',
             child: ImageResize(
               url: itemList[index],
               fit: ImageTools.boxFit(kProductDetail.boxFit),
-              size: kSize.large,
-              width: size.width,
+              size: kSize.small,
+              width: size.width * 0.5,
               hidePlaceHolder: true,
               forceWhiteBackground: kProductDetail.forceWhiteBackground,
             ),
           ),
+          ) 
+          
         );
       },
     );

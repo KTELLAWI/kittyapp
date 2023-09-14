@@ -89,10 +89,10 @@ class HeaderView extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(0.0),
                   child: Container(
-                    padding:EdgeInsets.all(1),
+                    padding:EdgeInsets.only(left:8,right:8,top:1,bottom:1),
                        decoration: BoxDecoration(
                     color: Theme.of(context).primaryColor,
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(10.0),
                   ),
                     child:Text(
                     S.of(context).seeAll,

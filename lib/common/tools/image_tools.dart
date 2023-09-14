@@ -48,14 +48,15 @@ class ImageTools {
     var lastIndex = url.lastIndexOf('_');
     lastIndex = lastIndex == -1 ? 0 : lastIndex;
     return url.replaceFirstMapped(_regexImageShopify, (match) {
-      switch (size) {
-        case kSize.large:
-          return '_3500x3500';
-        case kSize.small:
-          return '_1000x1000';
-        default: // kSize.medium
-          return '_2000x2000';
-      }
+       return '_1000x1000';
+      // switch (size) {
+      //   case kSize.large:
+      //     return '_3500x3500';
+      //   case kSize.small:
+      //     return '_1000x1000';
+      //   default: // kSize.medium
+      //     return '_2000x2000';
+      // }
     }, lastIndex);
   }
 
@@ -116,22 +117,24 @@ class ImageTools {
     String? fit, {
     BoxFit? defaultValue,
   }) {
-    switch (fit) {
-      case 'contain':
-        return BoxFit.contain;
-      case 'fill':
-        return BoxFit.fill;
-      case 'fitHeight':
-        return BoxFit.fitHeight;
-      case 'fitWidth':
-        return BoxFit.fitWidth;
-      case 'scaleDown':
-        return BoxFit.scaleDown;
-      case 'cover':
-        return BoxFit.cover;
-      default:
-        return defaultValue ?? BoxFit.cover;
-    }
+          return BoxFit.contain;
+
+    // switch (fit) {
+    //   case 'contain':
+    //     return BoxFit.contain;
+    //   case 'fill':
+    //     return BoxFit.fill;
+    //   case 'fitHeight':
+    //     return BoxFit.fitHeight;
+    //   case 'fitWidth':
+    //     return BoxFit.fitWidth;
+    //   case 'scaleDown':
+    //     return BoxFit.scaleDown;
+    //   case 'cover':
+    //     return BoxFit.cover;
+    //   default:
+    //     return defaultValue ?? BoxFit.cover;
+    // }
   }
 
   static Future<file.File> writeToFile(Uint8List? data,

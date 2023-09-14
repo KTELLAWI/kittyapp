@@ -67,10 +67,13 @@ class ProductPricing extends StatelessWidget {
               .apply(fontSizeFactor: 0.8)
               .merge(priceTextStyle),
         ),
+        //  if (!isSale) ...[
+        // const  SizedBox(height:35)
+        //  ],
 
         /// Not show regular price for variant product (product.regularPrice = "").
         if (isSale && product.type != 'variable' && showOnlyPrice == false) ...[
-          const SizedBox(width: 5),
+         // const SizedBox(width: 5),
           Text(
             product.type == 'grouped'
                 ? ''
@@ -95,6 +98,7 @@ class ProductPricing extends StatelessWidget {
                 ),
           ),
         ],
+        
       ],
     );
   }

@@ -73,16 +73,16 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
     }
 
     Widget productInfo = Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const SizedBox(height: 10),
+        const SizedBox(height: 5),
         ProductTitle(
           product: widget.item,
           hide: widget.config.hideTitle,
           maxLines: widget.config.titleLine,
         ),
         StoreName(product: widget.item, hide: widget.config.hideStore),
-        const SizedBox(height: 5),
+       // const SizedBox(height: 5),
         Align(
           alignment: Alignment.bottomLeft,
           child: Stack(
@@ -100,18 +100,18 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
                           product: widget.item,
                           hide: widget.config.hidePrice,
                         ),
-                        const SizedBox(height: 2),
-                        StockStatus(
-                            product: widget.item, config: widget.config),
-                        ProductRating(
-                          product: widget.item,
-                          config: widget.config,
-                        ),
-                        SaleProgressBar(
-                          width: widget.width,
-                          product: widget.item,
-                          show: widget.config.showCountDown,
-                        ),
+                        // const SizedBox(height: 2),
+                        // StockStatus(
+                        //     product: widget.item, config: widget.config),
+                        // ProductRating(
+                        //   product: widget.item,
+                        //   config: widget.config,
+                        // ),
+                        // SaleProgressBar(
+                        //   width: widget.width,
+                        //   product: widget.item,
+                        //   show: widget.config.showCountDown,
+                        // ),
                       ],
                     ),
                   ),
@@ -119,27 +119,27 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
                 ],
               ),
               if (!widget.config.showQuantity) ...[
-                Positioned(
-                  left: context.isRtl ? 0 : null,
-                  right: context.isRtl ? null : 0,
-                  child: CartIcon(product: widget.item, config: widget.config),
-                ),
-                const SizedBox(height: 40),
+                // Positioned(
+                //   left: context.isRtl ? 0 : null,
+                //   right: context.isRtl ? null : 0,
+                //   child: CartIcon(product: widget.item, config: widget.config),
+                // ),
+               // const SizedBox(height: 40),
               ],
             ],
           ),
         ),
-        CartQuantity(
-          product: widget.item,
-          config: widget.config,
-          onChangeQuantity: (val) {
-            setState(() {
-              _quantity = val;
-            });
-          },
-        ),
-        if (widget.config.showCartButton &&
-            Services().widget.enableShoppingCart(widget.item)) ...[
+        // CartQuantity(
+        //   product: widget.item,
+        //   config: widget.config,
+        //   onChangeQuantity: (val) {
+        //     setState(() {
+        //       _quantity = val;
+        //     });
+        //   },
+        // ),
+        // if (widget.config.showCartButton &&
+        //     Services().widget.enableShoppingCart(widget.item)) ...[
           const SizedBox(height: 6),
           CartButton(
             product: widget.item,
@@ -148,7 +148,7 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
             enableBottomAddToCart: widget.config.enableBottomAddToCart,
             quantity: _quantity,
           ),
-        ],
+        //],
       ],
     );
 
@@ -157,19 +157,24 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
           onTapProduct(context, product: widget.item, config: widget.config),
       behavior: HitTestBehavior.opaque,
       child: AnimatedContainer(
+        padding:EdgeInsets.all(3),
         duration: const Duration(milliseconds: 300),
         constraints: BoxConstraints(maxWidth: widget.maxWidth ?? width),
         width: widget.width!,
         margin: EdgeInsets.symmetric(
           horizontal: widget.config.hMargin,
-          vertical: widget.config.vMargin,
+          vertical: 5,//widget.config.vMargin,
         ),
         child: Stack(
           children: [
             Container(
               decoration: BoxDecoration(
                 borderRadius:
-                    BorderRadius.circular(widget.config.borderRadius ?? 3),
+                    BorderRadius.circular(20),
+                     border: Border.all(
+      width: 0.5,
+       color: Colors.grey,
+    ),
                 color: Theme.of(context).colorScheme.background,
                 boxShadow: [
                   if (widget.config.boxShadow != null)
@@ -187,21 +192,25 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
                 borderRadius:
                     BorderRadius.circular(widget.config.borderRadius ?? 3),
                 child: Column(
-                  mainAxisSize: MainAxisSize.min,
+                  mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   // mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     Stack(
                       children: [
+                        Padding(
+                          padding:EdgeInsets.all(3),
+                          child:
+                      
                         ProductImage(
-                          width: width,
+                          width:width,
                           product: widget.item,
                           config: widget.config,
-                          ratioProductImage: widget.config.imageRatio,
+                          ratioProductImage: 1.0,// widget.config.imageRatio,
                           offset: widget.offset,
                           onTapProduct: () => onTapProduct(context,
                               product: widget.item, config: widget.config),
-                        ),
+                        ),),
                         if (widget.config.showCartButtonWithQuantity &&
                             widget.item.canBeAddedToCartFromList(
                               enableBottomAddToCart:

@@ -20,13 +20,19 @@ class CartButton extends StatelessWidget with ActionButtonMixin {
 
   @override
   Widget build(BuildContext context) {
-    if (hide) return const SizedBox();
+    if (hide) return const SizedBox(height:20);
 
-    return TextButton(
+    return 
+
+     TextButton(
       style: TextButton.styleFrom(
+
         backgroundColor: Theme.of(context).primaryColor,
         disabledForegroundColor: Colors.white.withOpacity(0.38),
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+        padding: const EdgeInsets.only(left: 25, right:25 ),
+        shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(10),
+    ),
       ),
       onPressed: () => addToCart(
         context,
@@ -38,8 +44,10 @@ class CartButton extends StatelessWidget with ActionButtonMixin {
         S.of(context).addToCart,
         style: Theme.of(context).textTheme.bodyLarge!.copyWith(
               color: Colors.white,
+              fontSize:10,
             ),
       ),
+   
     );
   }
 }
