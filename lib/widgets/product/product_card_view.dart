@@ -73,7 +73,8 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
     }
 
     Widget productInfo = Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment:MainAxisAlignment.end,
       children: [
         const SizedBox(height: 5),
         ProductTitle(
@@ -82,7 +83,7 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
           maxLines: widget.config.titleLine,
         ),
         StoreName(product: widget.item, hide: widget.config.hideStore),
-       // const SizedBox(height: 5),
+        const SizedBox(height: 5),
         Align(
           alignment: Alignment.bottomLeft,
           child: Stack(
@@ -90,7 +91,7 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
               Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Expanded(
                     child: Column(
@@ -140,8 +141,9 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
         // ),
         // if (widget.config.showCartButton &&
         //     Services().widget.enableShoppingCart(widget.item)) ...[
-          const SizedBox(height: 6),
-          CartButton(
+       //  const SizedBox(height: 6),
+        
+    CartButton(
             product: widget.item,
             hide: !widget.item.canBeAddedToCartFromList(
                 enableBottomAddToCart: widget.config.enableBottomAddToCart),
@@ -159,11 +161,11 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
       child: AnimatedContainer(
         padding:EdgeInsets.all(3),
         duration: const Duration(milliseconds: 300),
-        constraints: BoxConstraints(maxWidth: widget.maxWidth ?? width),
+       constraints: BoxConstraints(maxWidth: widget.maxWidth ?? width),
         width: widget.width!,
         margin: EdgeInsets.symmetric(
           horizontal: widget.config.hMargin,
-          vertical: 5,//widget.config.vMargin,
+          vertical: 2,//widget.config.vMargin,
         ),
         child: Stack(
           children: [
@@ -171,18 +173,18 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
               decoration: BoxDecoration(
                 borderRadius:
                     BorderRadius.circular(20),
-                     border: Border.all(
-      width: 0.5,
-       color: Colors.grey,
-    ),
+                    //  border: Border.all(
+                    //           width: 0.5,
+                    //           color: Colors.grey,
+                    //         ),
                 color: Theme.of(context).colorScheme.background,
                 boxShadow: [
-                  if (widget.config.boxShadow != null)
+               //   if (widget.config.boxShadow != null)
                     BoxShadow(
                       color: Colors.black12,
                       offset: Offset(
-                        widget.config.boxShadow?.x ?? 0.0,
-                        widget.config.boxShadow?.y ?? 0.0,
+                        widget.config.boxShadow?.x ?? 1.0,
+                        widget.config.boxShadow?.y ?? 1.0,
                       ),
                       blurRadius: widget.config.boxShadow?.blurRadius ?? 0.0,
                     ),
@@ -192,74 +194,76 @@ class _ProductCardState extends State<ProductCard> with ActionButtonMixin {
                 borderRadius:
                     BorderRadius.circular(widget.config.borderRadius ?? 3),
                 child: Column(
-                  mainAxisSize: MainAxisSize.max,
+                  mainAxisSize: MainAxisSize.min,
+                   mainAxisAlignment:MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   // mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     Stack(
                       children: [
                         Padding(
-                          padding:EdgeInsets.all(3),
+                          padding:EdgeInsets.all(5),
                           child:
                       
                         ProductImage(
                           width:width,
                           product: widget.item,
                           config: widget.config,
-                          ratioProductImage: 1.0,// widget.config.imageRatio,
+                          ratioProductImage: 0.9,// widget.config.imageRatio,
                           offset: widget.offset,
                           onTapProduct: () => onTapProduct(context,
                               product: widget.item, config: widget.config),
                         ),),
-                        if (widget.config.showCartButtonWithQuantity &&
-                            widget.item.canBeAddedToCartFromList(
-                              enableBottomAddToCart:
-                                  widget.config.enableBottomAddToCart,
-                            ) &&
-                            Services().widget.enableShoppingCart(widget.item))
-                          Positioned.fill(
-                            child: Align(
-                              alignment: Alignment.bottomRight,
-                              child: Selector<CartModel, int>(
-                                selector: (context, cartModel) =>
-                                    cartModel.productsInCart[widget.item.id] ??
-                                    0,
-                                builder: (context, quantity, child) {
-                                  return CartButtonWithQuantity(
-                                    quantity: quantity,
-                                    borderRadiusValue:
-                                        widget.config.cartIconRadius,
-                                    increaseQuantityFunction: () {
-                                      // final minQuantityNeedAdd =
-                                      //     widget.item.getMinQuantity();
-                                      // var quantityWillAdd = 1;
-                                      // if (quantity == 0 &&
-                                      //     minQuantityNeedAdd > 1) {
-                                      //   quantityWillAdd = minQuantityNeedAdd;
-                                      // }
-                                      addToCart(
-                                        context,
-                                        quantity: 1,
-                                        product: widget.item,
-                                        enableBottomAddToCart:
-                                            widget.config.enableBottomAddToCart,
-                                      );
-                                    },
-                                    decreaseQuantityFunction: () {
-                                      if (quantity <= 0) return;
-                                      updateQuantity(
-                                        context: context,
-                                        quantity: quantity - 1,
-                                        product: widget.item,
-                                      );
-                                    },
-                                  );
-                                },
-                              ),
-                            ),
-                          ),
+                        // if (widget.config.showCartButtonWithQuantity &&
+                        //     widget.item.canBeAddedToCartFromList(
+                        //       enableBottomAddToCart:
+                        //           widget.config.enableBottomAddToCart,
+                        //     ) &&
+                        //     Services().widget.enableShoppingCart(widget.item))
+                          // Positioned.fill(
+                          //   child: Align(
+                          //     alignment: Alignment.bottomRight,
+                          //     child: Selector<CartModel, int>(
+                          //       selector: (context, cartModel) =>
+                          //           cartModel.productsInCart[widget.item.id] ??
+                          //           0,
+                          //       builder: (context, quantity, child) {
+                          //         return CartButtonWithQuantity(
+                          //           quantity: quantity,
+                          //           borderRadiusValue:
+                          //               widget.config.cartIconRadius,
+                          //           increaseQuantityFunction: () {
+                          //             // final minQuantityNeedAdd =
+                          //             //     widget.item.getMinQuantity();
+                          //             // var quantityWillAdd = 1;
+                          //             // if (quantity == 0 &&
+                          //             //     minQuantityNeedAdd > 1) {
+                          //             //   quantityWillAdd = minQuantityNeedAdd;
+                          //             // }
+                          //             // addToCart(
+                          //             //   context,
+                          //             //   quantity: 1,
+                          //             //   product: widget.item,
+                          //             //   enableBottomAddToCart:
+                          //             //       widget.config.enableBottomAddToCart,
+                          //             // );
+                          //           },
+                          //           decreaseQuantityFunction: () {
+                          //             if (quantity <= 0) return;
+                          //             updateQuantity(
+                          //               context: context,
+                          //               quantity: quantity - 1,
+                          //               product: widget.item,
+                          //             );
+                          //           },
+                          //         );
+                          //       },
+                          //     ),
+                          //   ),
+                          // ),
                       ],
                     ),
+                   
                     Container(
                       padding: EdgeInsets.symmetric(
                         horizontal: widget.config.hPadding,

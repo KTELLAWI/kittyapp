@@ -20,7 +20,19 @@ class CartButton extends StatelessWidget with ActionButtonMixin {
 
   @override
   Widget build(BuildContext context) {
-    if (hide) return const SizedBox(height:20);
+    if (hide) return 
+     TextButton(
+      child:Text(""),
+        onPressed: () => {},
+      style: TextButton.styleFrom(
+
+        backgroundColor: Colors.transparent,
+        disabledForegroundColor: Colors.white.withOpacity(0.38),
+        padding: const EdgeInsets.only(left: 15, right:15 ),
+        shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(10),
+      
+    ),));
 
     return 
 
@@ -29,7 +41,7 @@ class CartButton extends StatelessWidget with ActionButtonMixin {
 
         backgroundColor: Theme.of(context).primaryColor,
         disabledForegroundColor: Colors.white.withOpacity(0.38),
-        padding: const EdgeInsets.only(left: 25, right:25 ),
+        padding: const EdgeInsets.only(left: 15, right:15 ),
         shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(10),
     ),

@@ -48,15 +48,15 @@ class ImageTools {
     var lastIndex = url.lastIndexOf('_');
     lastIndex = lastIndex == -1 ? 0 : lastIndex;
     return url.replaceFirstMapped(_regexImageShopify, (match) {
-       return '_1000x1000';
-      // switch (size) {
-      //   case kSize.large:
-      //     return '_3500x3500';
-      //   case kSize.small:
-      //     return '_1000x1000';
-      //   default: // kSize.medium
-      //     return '_2000x2000';
-      // }
+     
+      switch (size) {
+        case kSize.large:
+          return '_3500x3500';
+        case kSize.small:
+          return '_1000x1000';
+        default: // kSize.medium
+          return '_2000x2000';
+       }
     }, lastIndex);
   }
 

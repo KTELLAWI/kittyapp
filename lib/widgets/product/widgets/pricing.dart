@@ -62,9 +62,9 @@ class ProductPricing extends StatelessWidget {
               .textTheme
               .titleLarge!
               .copyWith(
-                fontWeight: FontWeight.w600,
+                fontWeight: FontWeight.w800,
               )
-              .apply(fontSizeFactor: 0.8)
+              .apply(fontSizeFactor: 0.6)
               .merge(priceTextStyle),
         ),
         //  if (!isSale) ...[
@@ -73,12 +73,13 @@ class ProductPricing extends StatelessWidget {
 
         /// Not show regular price for variant product (product.regularPrice = "").
         if (isSale && product.type != 'variable' && showOnlyPrice == false) ...[
-         // const SizedBox(width: 5),
+          const SizedBox(width: 1),
           Text(
             product.type == 'grouped'
                 ? ''
-                : PriceTools.getPriceProduct(product, currencyRate, currency,
-                    onSale: false)!,
+                :product!.price!,
+                //  PriceTools.getPriceProduct(product, currencyRate, currency,
+                //     onSale: false)!,
             style: Theme.of(context)
                 .textTheme
                 .bodySmall!
@@ -88,7 +89,7 @@ class ProductPricing extends StatelessWidget {
                       Theme.of(context).colorScheme.secondary.withOpacity(0.6),
                   decoration: TextDecoration.lineThrough,
                 )
-                .apply(fontSizeFactor: 0.8)
+                .apply(fontSizeFactor: 0.7)
                 .merge(
                   priceTextStyle?.copyWith(
                       color: priceTextStyle?.color?.withOpacity(0.6),
