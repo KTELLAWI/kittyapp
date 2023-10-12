@@ -513,7 +513,7 @@
 "radiusTopRight":0,
 "TabBarIndicator":{
 "strokeWidth":0,
-"color":"ff234bbb",
+"color":"ffcc0071",
 "horizontalPadding":0,
 "topRightRadius":0,
 "tabPosition":"top",
@@ -539,7 +539,7 @@
 "isSafeArea":true,
 "TabBarFloating":{
 "elevation":2.005172228538149,
-"color":"ff234bbb",
+"color":"ffcc0071",
 "width":50,
 "floatingType":"rectangle",
 "location":"startDocked",
@@ -555,7 +555,7 @@
 "radiusBottomLeft":0,
 "alwaysShowTabBar":false,
 "marginLeft":0,
-"colorIcon":"ff234bbb",
+"colorIcon":"ffcc0071",
 "marginBottom":0,
 "paddingLeft":0,
 "marginTop":0
@@ -564,7 +564,7 @@
 "FontHeader":"Cairo",
 "ProductDetail":"simpleType",
 "useMaterial3":false,
-"MainColor":"ff234bbb",
+"MainColor":"ffcc0071",
 "ShowChat":true,
 "AgeRestriction":{
 "enable":false,
