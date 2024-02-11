@@ -76,7 +76,7 @@
 	<key>FacebookClientToken</key>
 	<string>${facebookClientToken}</string>
 	<key>FacebookDisplayName</key>
-	<string>${appName}</string>
+	<string>كيتي</string>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<true/>
 	<key>FirebaseScreenReportingEnabled</key>

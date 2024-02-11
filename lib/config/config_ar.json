@@ -493,7 +493,7 @@
         "background": "#D4F1E5"
     },
     "smartChat": {
-        "app": "https://wa.me/905528095357",
+        "app": "https://wa.me/966501784877",
         "description": "WhatsApp",
         "iconData": "whatsapp"
     },
@@ -513,7 +513,7 @@
             "radiusTopRight": 0,
             "TabBarIndicator": {
                 "strokeWidth": 0,
-                "color": "ff234bbb",
+                "color": "ffcc0071",
                 "horizontalPadding": 0,
                 "topRightRadius": 0,
                 "tabPosition": "top",
@@ -539,7 +539,7 @@
             "isSafeArea": true,
             "TabBarFloating": {
                 "elevation": 2.005172228538149,
-                "color": "ff234bbb",
+                "color": "ffcc0071",
                 "width": 50,
                 "floatingType": "rectangle",
                 "location": "startDocked",
@@ -555,7 +555,7 @@
             "radiusBottomLeft": 0,
             "alwaysShowTabBar": false,
             "marginLeft": 0,
-            "colorIcon": "ff234bbb",
+            "colorIcon": "ffcc0071",
             "marginBottom": 0,
             "paddingLeft": 0,
             "marginTop": 0
