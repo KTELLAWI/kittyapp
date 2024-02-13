@@ -84,7 +84,7 @@
 	<key>FirebaseDeepLinkPasteboardRetrievalEnabled</key>
 	<false/>
 	<!-- <key>GADApplicationIdentifier</key>
-	<string>${adMobAppIdIos}</string> -->
+	<string>ca-app-pub-7432665165146018~2664444130</string> -->
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>paytm</string>
