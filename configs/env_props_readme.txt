@@ -25,11 +25,11 @@ iosBundleId=com.inspireui.mstore.flutter
 iosBundleIdOneSignal=com.inspireui.mstore.flutter.onesignal
 iosAppGroups=group.com.inspireui.mstore.flutter.onesignal
 iosMerchantId=merchant.com.inspireui.mstore.flutter
-androidPackageName=online.digistacks.khadrah
+androidPackageName=online.digistacks.kitty
 
 # For some native payments, push notification and Dynamic Links features (optional).
-websiteUrl=https://inspireui.com
-websiteDomain=inspireui.com
+websiteUrl=
+websiteDomain=
 customScheme=khadrah
 iosApsEnvironment=development
 firebaseDynamicUrl=khadrahinspireui.page.link

@@ -1,4 +1,4 @@
-package online.digistacks.khadrah
+package online.digistacks.kitty
 
 import android.app.NotificationManager
 import android.content.Context
