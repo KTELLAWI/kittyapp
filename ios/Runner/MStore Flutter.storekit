@@ -15,7 +15,7 @@
           "locale" : "en_GB"
         }
       ],
-      "productID" : "online.digistacks.khadrah.test",
+      "productID" : "online.digistacks.kitty.test",
       "referenceName" : "In App Purchase Test",
       "type" : "Consumable"
     },
@@ -63,7 +63,7 @@
           "localizations" : [
 
           ],
-          "productID" : "online.digistacks.khadrah.subscription.test",
+          "productID" : "online.digistacks.kitty.subscription.test",
           "recurringSubscriptionPeriod" : "P1M",
           "referenceName" : "Subscription Test",
           "subscriptionGroupID" : "21093766",

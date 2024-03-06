@@ -4,7 +4,7 @@ const int _defaultMinDays = 7;
 const int _defaultMinLaunches = 10;
 const int _defaultRemindDays = 7;
 const int _defaultRemindLaunches = 10;
-const String _defaultGooglePlayIdentifier = 'online.digistacks.khadrah';
+const String _defaultGooglePlayIdentifier = 'online.digistacks.kitty';
 const String _defaultAppStoreIdentifier = '1469772800';
 
 class AppRatingConfig {

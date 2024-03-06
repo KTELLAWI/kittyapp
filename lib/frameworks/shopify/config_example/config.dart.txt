@@ -18,7 +18,7 @@ Map<String, dynamic> environment = {
   },
   "appRatingConfig": {
     'showOnOpen': false,
-    'android': 'online.digistacks.khadrah',
+    'android': 'online.digistacks.kitty',
     'ios': '1469772800',
     'minDays': 7,
     'minLaunches': 10,
@@ -293,7 +293,7 @@ Map<String, dynamic> environment = {
     //The link your app will open
     "link": "https://mstore.io/",
     //----------* Android Setting *----------//
-    "androidPackageName": "online.digistacks.khadrah",
+    "androidPackageName": "online.digistacks.kitty",
     "androidAppMinimumVersion": 1,
     //----------* iOS Setting *----------//
     "iOSBundleId": "com.inspireui.mstore.flutter",
