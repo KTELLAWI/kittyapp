@@ -10,7 +10,7 @@
                 "name": "circle_grid_3x3_fill"
             },
             "showLogo": true,
-            "showSearch": false
+            "showSearch": true
         },
         {
             "layout": "bannerImage",
@@ -19,28 +19,14 @@
             "autoPlay": true,
             "items": [
                 {
-                    "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/IMG-20230830-WA0006.jpg",
+                    "image": "https://cdn.shopify.com/s/files/1/0791/4104/4513/files/MOP_2.png?v=1699107398",
                     "showSubcategory": false,
                     "bannerWithProduct": false,
                     "defaultShowProduct": false,
                     "products": []
                 },
                 {
-                    "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/WhatsApp_Image_2023-07-27_at_15.29.23.jpg",
-                    "showSubcategory": false,
-                    "bannerWithProduct": false,
-                    "defaultShowProduct": false,
-                    "products": []
-                },
-                {
-                    "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_19.png?v=1690461339",
-                    "showSubcategory": false,
-                    "bannerWithProduct": false,
-                    "defaultShowProduct": false,
-                    "products": []
-                },
-                {
-                    "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_18.png",
+                    "image": "https://cdn.shopify.com/s/files/1/0791/4104/4513/files/MOP_1.png?v=1699107359",
                     "showSubcategory": false,
                     "bannerWithProduct": false,
                     "defaultShowProduct": false,
@@ -72,7 +58,7 @@
                 {
                     "defaultShowProduct": false,
                     "padding": 5,
-                    "category": "gid://shopify/Collection/411127775457",
+                    "category": "gid://shopify/Collection/453699141921",
                     "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_9-3.png",
                     "showSubcategory": false,
                     "products": [],
@@ -85,7 +71,7 @@
                     "showSubcategory": false,
                     "bannerWithProduct": false,
                     "products": [],
-                    "category": "gid://shopify/Collection/411127546081"
+                    "category": "gid://shopify/Collection/453699371297"
                 }
             ],
             "layout": "bannerImage",
@@ -107,7 +93,7 @@
             "parallaxImageRatio": 1.2,
             "items": [
                 {
-                    "category": "gid://shopify/Collection/411127677153",
+                    "category": "gid://shopify/Collection/453699272993",
                     "showSubcategory": false,
                     "defaultShowProduct": false,
                     "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_9-4.png",
@@ -117,7 +103,7 @@
                 },
                 {
                     "defaultShowProduct": false,
-                    "category": "gid://shopify/Collection/411127709921",
+                    "category": "gid://shopify/Collection/453699174689",
                     "showSubcategory": false,
                     "products": [],
                     "bannerWithProduct": false,
@@ -163,75 +149,40 @@
             "spacing": 12,
             "items": [
                 {
-                    "category": "gid://shopify/Collection/411130953953",
+                    "category": "gid://shopify/Collection/464209150241",
                     "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_6_732e52b6-693a-4740-a695-be2a042d7932.png?v=1691513139",
                     "showText": false,
                     "originalColor": true,
                     "keepDefaultTitle": false,
                     "showDescription": false,
-                    "title": "Suit"
+                    "title": "Applaws"
                 },
                 {
-                    "category": "gid://shopify/Collection/411130757345",
+                    "category": "gid://shopify/Collection/464209215777",
                     "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_3_2d85fded-1a52-4ac4-803d-5f6a2dc63917.png?v=1691513139",
                     "showText": false,
                     "originalColor": true,
                     "keepDefaultTitle": false,
                     "showDescription": false,
-                    "title": "Bag"
+                    "title": "Schesir"
                 },
                 {
-                    "category": "gid://shopify/Collection/411129839841",
+                    "category": "gid://shopify/Collection/464209412385",
                     "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_bf96e8d0-3294-41bd-9d3c-0606e77f32a2.png?v=1691513139",
                     "showText": false,
                     "originalColor": true,
                     "keepDefaultTitle": false,
                     "showDescription": false,
-                    "title": "Jacke"
+                    "title": "Kit Cat"
                 },
                 {
-                    "category": "gid://shopify/Collection/411130659041",
-                    "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_7_5c468ffb-012e-4ff7-b182-ad0b6ef4a404.png?v=1691513139",
-                    "showText": false,
-                    "originalColor": true,
-                    "keepDefaultTitle": false,
-                    "showDescription": false,
-                    "title": "Hat"
-                },
-                {
-                    "category": "gid://shopify/Collection/411130364129",
-                    "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_5_a25d87bf-68b2-4676-91b7-2edf8aa713f7.png?v=1691513139",
-                    "showText": false,
-                    "originalColor": true,
-                    "keepDefaultTitle": false,
-                    "showDescription": false,
-                    "title": "Glasses"
-                },
-                {
-                    "category": "gid://shopify/Collection/411130495201",
-                    "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_0befa83a-b7bb-4043-a631-889f26eb7576.png?v=1691513140",
-                    "showText": false,
-                    "originalColor": true,
-                    "keepDefaultTitle": false,
-                    "showDescription": false
-                },
-                {
-                    "category": "gid://shopify/Collection/411130888417",
+                    "category": "gid://shopify/Collection/464209314081",
                     "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_2_22e94218-eb7d-4151-a42b-81840b7b05a8.png?v=1691513139",
                     "showText": false,
                     "originalColor": true,
                     "keepDefaultTitle": false,
                     "showDescription": false,
-                    "title": "T-Shirt"
-                },
-                {
-                    "category": "gid://shopify/Collection/411130527969",
-                    "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_4_faaadcc7-9570-47ee-9912-a2923e839b92.png?v=1691513139",
-                    "showText": false,
-                    "originalColor": true,
-                    "keepDefaultTitle": false,
-                    "showDescription": false,
-                    "title": "Dress"
+                    "title": "Zolux"
                 }
             ],
             "line": false,
@@ -304,14 +255,14 @@
             "vMargin": 0,
             "cartIconRadius": 9,
             "onSale": false,
-            "category": "gid://shopify/Collection/453692522785",
+            "category": "gid://shopify/Collection/453699141921",
             "columns": 0,
             "parallax": false,
             "spaceWidth": 108.33333333333337,
             "showCountDown": false,
             "backgroundRadius": 0,
             "showCartIconColor": false,
-            "name": "قسم التخفيضات",
+            "name": "طعام رطب",
             "backgroundHeight": 287,
             "productListItemHeight": 125,
             "enableAutoSliding": false,
@@ -323,7 +274,7 @@
             "backgroundBoxFit": "cover",
             "borderRadius": 9,
             "enableRating": true,
-            "category": "gid://shopify/Collection/453692522785",
+            "category": "gid://shopify/Collection/453699174689",
             "backgroundHeight": 287,
             "cartIconRadius": 9,
             "onSale": false,
@@ -369,64 +320,7 @@
             "showCartIcon": false,
             "featured": false,
             "showStockStatus": false,
-            "name": "قسم القطط",
-            "productListItemHeight": 125,
-            "enableAutoSliding": false,
-            "productType": false
-        },
-        {
-            "hidePrice": false,
-            "hideTitle": false,
-            "hideStore": false,
-            "layout": "threeColumn",
-            "showQuantity": false,
-            "hideEmptyProductLayout": false,
-            "imageRatio": 1.2,
-            "marginBGP": {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0
-            },
-            "showCartIcon": false,
-            "showHeart": false,
-            "cardDesign": "card",
-            "borderRadius": 9,
-            "rows": 1,
-            "hMargin": 6,
-            "hPadding": 9,
-            "vPadding": 2,
-            "hideEmptyProductListRating": false,
-            "enableBottomAddToCart": false,
-            "featured": false,
-            "image": "",
-            "showOnlyImage": false,
-            "showStockStatus": false,
-            "paddingBGP": {
-                "left": 0,
-                "right": 0,
-                "top": 14.814814814814842,
-                "bottom": 0
-            },
-            "backgroundBoxFit": "cover",
-            "parallaxImageRatio": 1.2,
-            "showCartButtonWithQuantity": false,
-            "showCartButton": true,
-            "isSnapping": false,
-            "enableRating": true,
-            "imageBoxfit": "contain",
-            "vMargin": 0,
-            "cartIconRadius": 9,
-            "onSale": false,
-            "category": "gid://shopify/Collection/453692522785",
-            "columns": 0,
-            "parallax": false,
-            "spaceWidth": 108.33333333333337,
-            "showCountDown": false,
-            "backgroundRadius": 0,
-            "showCartIconColor": false,
-            "name": "قسم الكلاب",
-            "backgroundHeight": 287,
+            "name": "طعام جلف",
             "productListItemHeight": 125,
             "enableAutoSliding": false,
             "productType": false
@@ -695,21 +589,88 @@
             "fontFamily": "CupertinoIcons",
             "remapCategories": [
                 {
-                    "parent": "gid://shopify/Collection/456821113142",
-                    "image": "https://trello.com/1/cards/63587806a57fae002ab4b20f/attachments/64ea07e33dcb9b9588ccbc2a/download/Artboard-1.png",
-                    "name": "عروض الهدايا",
-                    "category": "gid://shopify/Collection/456821080374"
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/464209412385"
                 },
                 {
-                    "parent": "gid://shopify/Collection/456821113142",
-                    "image": "https://trello.com/1/cards/63587806a57fae002ab4b20f/attachments/64ea088df7b7780c191d9d24/download/Artboard-1.png",
-                    "name": "كروت الاهداء",
-                    "category": "gid://shopify/Collection/456821375286"
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/464209150241"
                 },
                 {
-                    "parent": "gid://shopify/Collection/456816492854",
-                    "name": "نباتات بيتية",
-                    "category": "gid://shopify/Collection/456820818230"
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/464209510689"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/464209445153"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/467378733345"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/467378602273"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/467378569505"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/464209281313"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/464209543457"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/464209346849"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/464209314081"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/464209215777"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/464209183009"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/474877133089"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/474877100321"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/474877067553"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/474876969249"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/474876903713"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/474876838177"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/474876805409"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/474876608801"
                 }
             ],
             "fullscreen": false,
