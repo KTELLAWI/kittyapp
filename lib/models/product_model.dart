@@ -105,8 +105,8 @@ class ProductModel with ChangeNotifier {
   Future <List<Map>> getMetafields (id) async{
 
     lstGroupedProduct = [];
-    final metaData = await _service.api.getMetaFields(id);
-    return metaData;
+    //final metaData = await _service.api.getMetaFields(id);
+    return [];
 
   }
 

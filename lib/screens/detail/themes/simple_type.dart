@@ -53,7 +53,7 @@ class _SimpleLayoutState extends State<SimpleLayout>
   @override
   void initState() {
     super.initState();
-fetchData();
+// fetchData();
     _hideController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 450),
@@ -234,8 +234,9 @@ fetchData();
                                       ),
                                       child: widget.product.isGroupedProduct
                                           ? const SizedBox()
-                                          : ProductTitle(product),
+                                          : ProductTitle(product!),
                                     ),
+                                    //Text("ddd"),
                           //          List.generate( meta!.length,(index) {
                           //         return ListTile(
                           //                     title: Text(model.keywords[index]),
@@ -258,36 +259,36 @@ fetchData();
             //                   textAlign: TextAlign.right),)
             //                 ]
             //               ),
-                          SizedBox(
-                            height:3
-                          ), if(listo!.isNotEmpty)
-                                         Row(
-                            children:[
-                               Image.network('https://cdn.shopify.com/s/files/1/0810/7350/4566/files/3.png?v=1693233311', width: 60, height: 60),
-                               SizedBox(width: 5),
-                                Flexible(
-            child:
-                               Text(listo![1]!["value"].toString(),
-                                maxLines: 2, // Set maximum lines to 2
-                              //overflow: TextOverflow.ellipsis,
-                              textAlign: TextAlign.right),)
-                            ]
-                          ),
-                                SizedBox(
-                            height:3
-                          ), if(listo!.isNotEmpty)
-                                         Row(
-                            children:[
-                               Image.network('https://cdn.shopify.com/s/files/1/0810/7350/4566/files/2.png?v=1693233311', width: 60, height: 60),
-                               SizedBox(width: 5),
-                                Flexible(
-            child:
-                               Text(listo![2]!["value"].toString(),
-                                maxLines: 2, // Set maximum lines to 2
-                              //overflow: TextOverflow.ellipsis,
-                              textAlign: TextAlign.right),)
-                            ]
-                          ),
+            //               SizedBox(
+            //                 height:3
+            //               ), if(listo!.isNotEmpty)
+            //                              Row(
+            //                 children:[
+            //                    Image.network('https://cdn.shopify.com/s/files/1/0810/7350/4566/files/3.png?v=1693233311', width: 60, height: 60),
+            //                    SizedBox(width: 5),
+            //                     Flexible(
+            // child:
+            //                    Text(listo![1]!["value"].toString(),
+            //                     maxLines: 2, // Set maximum lines to 2
+            //                   //overflow: TextOverflow.ellipsis,
+            //                   textAlign: TextAlign.right),)
+            //                 ]
+            //               ),
+            //                     SizedBox(
+            //                 height:3
+            //               ), if(listo!.isNotEmpty)
+            //                              Row(
+            //                 children:[
+            //                    Image.network('https://cdn.shopify.com/s/files/1/0810/7350/4566/files/2.png?v=1693233311', width: 60, height: 60),
+            //                    SizedBox(width: 5),
+            //                     Flexible(
+            // child:
+            //                    Text(listo![2]!["value"].toString(),
+            //                     maxLines: 2, // Set maximum lines to 2
+            //                   //overflow: TextOverflow.ellipsis,
+            //                   textAlign: TextAlign.right),)
+            //                 ]
+            //               ),
                                   ],
                                 ),
                               ),

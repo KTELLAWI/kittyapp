@@ -76,7 +76,7 @@ class _ProductTitleState extends BaseScreen<ProductTitle> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-
+    final tammaraPrice = price != null ? (double.parse(price!) / 4).toStringAsFixed(2) : '0.00';
     productVariation = Provider.of<ProductModel>(context).selectedVariation;
     getProductPrice();
 
@@ -148,10 +148,12 @@ class _ProductTitleState extends BaseScreen<ProductTitle> {
                       ),
                 ),
               ),
+              
           ],
         ),
         const SizedBox(height: 10),
         Services().widget.renderDetailPrice(context, widget.product!, price),
+
 
         /// For variable product, hide regular price when loading product variation.
         if (isSaleOff) ...[
@@ -232,8 +234,36 @@ class _ProductTitleState extends BaseScreen<ProductTitle> {
                   width: 160,
                 ),
               ),
+            
           ],
         ),
+       Container(
+         padding: EdgeInsets.all(4.0),
+  decoration: BoxDecoration(
+    border: Border.all(width: 1, color: Colors.grey),
+    borderRadius: BorderRadius.circular(8.0),
+  ),
+  child: Row(
+    children: [
+      Expanded(
+        child: Container(
+          padding: EdgeInsets.all(8.0),
+          //color: Colors.grey[200],
+          child: Text(
+            "قسم فاتورتك حتى 4 دفعات شهرية بقيمة  $tammaraPrice ر.س  بدون فوائد بدون اية رسوم تأخير",
+            textAlign: TextAlign.start,
+          ),
+        ),
+      ),
+      Image.network(
+        'https://iconape.com/wp-content/png_logo_vector/tamara-%D8%AA%D9%85%D8%A7%D8%B1%D8%A7.png',
+        width: 85,
+        height: 85,
+      ),
+    ],
+  ),
+)
+
       ],
     );
   }

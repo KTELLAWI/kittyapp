@@ -19,14 +19,26 @@
             "autoPlay": true,
             "items": [
                 {
-                    "image": "https://cdn.shopify.com/s/files/1/0791/4104/4513/files/MOP_2.png?v=1699107398",
+                    "image": "https://cdn.shopify.com/s/files/1/0791/4104/4513/files/324a07c0ddc7fdb672cd2b7145c01105_61ff20a2-7e6e-4143-b526-e4479717a35b.png?v=1711405114",
+                    "padding": 8,
+                    "featured": true,
+                    "category": "gid://shopify/Collection/453699371297"
+                },
+                {
+                    "image": "https://cdn.shopify.com/s/files/1/0791/4104/4513/files/1_copy_20_fbf18edf-779e-4459-83cf-d6f0dde1fd4f.png?v=1711307187",
+                    "padding": 8,
+                    "featured": true,
+                    "category": "gid://shopify/Collection/475591934241"
+                },
+                {
+                    "image": "https://cdn.shopify.com/s/files/1/0791/4104/4513/files/6930333e29c929f37bf9880feb3963ff.png?v=1710162005",
                     "showSubcategory": false,
                     "bannerWithProduct": false,
                     "defaultShowProduct": false,
                     "products": []
                 },
                 {
-                    "image": "https://cdn.shopify.com/s/files/1/0791/4104/4513/files/MOP_1.png?v=1699107359",
+                    "image": "https://cdn.shopify.com/s/files/1/0791/4104/4513/files/web.png?v=1710162077",
                     "showSubcategory": false,
                     "bannerWithProduct": false,
                     "defaultShowProduct": false,
@@ -59,7 +71,7 @@
                     "defaultShowProduct": false,
                     "padding": 5,
                     "category": "gid://shopify/Collection/453699141921",
-                    "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_9-3.png",
+                    "image": "https://cdn.shopify.com/s/files/1/0791/4104/4513/files/355063520e925444ac6d380ec1aa3df2.png?v=1711400500",
                     "showSubcategory": false,
                     "products": [],
                     "bannerWithProduct": false
@@ -67,7 +79,7 @@
                 {
                     "padding": 5,
                     "defaultShowProduct": false,
-                    "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_9-1.png",
+                    "image": "https://cdn.shopify.com/s/files/1/0791/4104/4513/files/fbed82fb56b8a91cb8f3b6919babc5b2.png?v=1711400500",
                     "showSubcategory": false,
                     "bannerWithProduct": false,
                     "products": [],
@@ -96,7 +108,7 @@
                     "category": "gid://shopify/Collection/453699272993",
                     "showSubcategory": false,
                     "defaultShowProduct": false,
-                    "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_9-4.png",
+                    "image": "https://cdn.shopify.com/s/files/1/0791/4104/4513/files/a6501fac215b8381cc40c4aac5d9c73d.png?v=1711400500",
                     "padding": 5,
                     "products": [],
                     "bannerWithProduct": false
@@ -107,7 +119,7 @@
                     "showSubcategory": false,
                     "products": [],
                     "bannerWithProduct": false,
-                    "image": "https://cdn.shopify.com/s/files/1/0667/8157/7441/files/1_copy_9_201d92f0-d20a-4f58-bcfe-bac4a09ddd04.png",
+                    "image": "https://cdn.shopify.com/s/files/1/0791/4104/4513/files/b9362834fc7268562bc966d643974cf9.png?v=1711400499",
                     "padding": 5
                 }
             ],
@@ -329,18 +341,7 @@
     "aboutData": {
         "id": 3,
         "container": {
-            "height": 0.45,
-            "image": {
-                "imageBoxfit": "contain",
-                "fit": "contain",
-                "height": 0.3,
-                "width": 1,
-                "url": "https://i.imgur.com/ZbsoG27.png",
-                "align": {
-                    "x": 1,
-                    "y": 1
-                }
-            },
+            "height": 0.25,
             "header": {
                 "align": {
                     "x": 0,
@@ -354,22 +355,13 @@
                 "subHeader": ""
             }
         },
-        "description": "عالم يتجدد على الدوام، فهل من المعقول أنك لم تغيّر صفحة “من نحن” الخاصة بشركتك، التي اعتمدتها منذ خمس سنوات مضت؟ أم أن شركتك لم تتطور وبقيت تُراوح مكانها منذ تأسيسها وإطلاق الموقع. هناك دائما قصص جديدة ومثيرة تحدث، أو قصص قديمة قيلت وتحتاج أن يتم قصّها بطرق أكثر إثارة، هناك أهداف تم تحقيقها، وأهداف أخرى سُطّرت في شركتك، أفكارٌ تغيرت، مهارات وأفك",
+        "description": "متجر كيتي، متجر متخصص بكافة أغذية ومستلزمات القطط في المملكة العربية السعودية، حيث نعمل من أجل سعادة كافة مربي الحيوانات الأليفة، بتوفير منتجات صحية عالية الجودة لقططهم المنزلية، لا تذهب بعيدا، فسواء كنت تبحث عن أغذية ومكافآت قطط متوازنة ولذيذة، أو إذا أردت توفير لعب وخداشات ومستلزمات قطط أخرى، ستجد كافة احتياجات حيوانك الأليف في متجر كيتي.  ",
         "background": "#D4F1E5"
     },
     "privacyData": {
         "id": 3,
         "container": {
-            "height": 0.45,
-            "image": {
-                "height": 0.3,
-                "width": 1,
-                "url": "https://i.imgur.com/ZbsoG27.png",
-                "align": {
-                    "x": 1,
-                    "y": 1
-                }
-            },
+            "height": 0.25,
             "header": {
                 "align": {
                     "x": 0,
@@ -379,11 +371,11 @@
                     "horizontal": 0,
                     "vertical": 0
                 },
-                "text": "من نحن",
+                "text": "سياسة الخصوصية",
                 "subHeader": ""
             }
         },
-        "description": "عالم يتجدد على الدوام، فهل من المعقول أنك لم تغيّر صفحة “من نحن” الخاصة بشركتك، التي اعتمدتها منذ خمس سنوات مضت؟ أم أن شركتك لم تتطور وبقيت تُراوح مكانها منذ تأسيسها وإطلاق الموقع. هناك دائما قصص جديدة ومثيرة تحدث، أو قصص قديمة قيلت وتحتاج أن يتم قصّها بطرق أكثر إثارة، هناك أهداف تم تحقيقها، وأهداف أخرى سُطّرت في شركتك، أفكارٌ تغيرت، مهارات وأفك",
+        "description": "بيان سياسة الخصوصية هذا يوضح كيف يستخدم و يحمي متجر كيني أي معلومات يتم جمعها عند استخدام هذا الموقع. ويلتزم متجر كيتي بضمان حماية خصوصيتك ومعلوماتك. حيث سوف يطلب منك تقديم بعض المعلومات التي يمكن التعرف من خلالها على هويتك عند استخدام هذا الموقع، ولن يتم استخدام هذه المعلومات إلا وفقاً لبيان سياسة الخصوصية. علماَ أنه قد تتغير سياسة الخصوصية لمتجر كيتى من وقت لآخر عن طريق تحديث هذه الصفحة فيجبعليك مراجعة هذه الصفحة من وقت لآخر للتأكد من مناسبة هذه التغييرات",
         "background": "#D4F1E5"
     },
     "smartChat": {
@@ -589,8 +581,15 @@
             "fontFamily": "CupertinoIcons",
             "remapCategories": [
                 {
+                    "image": "",
+                    "category": "gid://shopify/Collection/473210716449",
+                    "name": "العلامات التجارية"
+                },
+                {
                     "parent": "gid://shopify/Collection/473210716449",
-                    "category": "gid://shopify/Collection/464209412385"
+                    "category": "gid://shopify/Collection/464209412385",
+                    "image": ""
+                   
                 },
                 {
                     "parent": "gid://shopify/Collection/473210716449",
@@ -671,6 +670,14 @@
                 {
                     "parent": "gid://shopify/Collection/473210716449",
                     "category": "gid://shopify/Collection/474876608801"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/475591934241"
+                },
+                {
+                    "parent": "gid://shopify/Collection/473210716449",
+                    "category": "gid://shopify/Collection/475591999777"
                 }
             ],
             "fullscreen": false,

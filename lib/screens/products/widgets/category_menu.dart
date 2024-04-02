@@ -52,7 +52,12 @@ class StateProductCategoryMenu extends State<ProductCategoryMenu> {
   Widget renderListCategories(List<Category> categories) {
     var categoryMenu = categoryImageMenu;
 
-    return Container(
+
+ if(categories.length== 0)
+   return SizedBox(height:2);
+    return
+   
+     Container(
       padding: const EdgeInsets.symmetric(horizontal: 8).copyWith(bottom: 4),
       color: Theme.of(context).colorScheme.background,
       constraints: const BoxConstraints(minHeight: 40),
@@ -128,7 +133,7 @@ class StateProductCategoryMenu extends State<ProductCategoryMenu> {
         final selectedIndex =
             categories.indexWhere((o) => o.id == selectedCategoryId);
         _animateToCategory(selectedIndex);
-        return renderListCategories(categories);
+        return renderListCategories([]);
       }
 
       // =============================== //

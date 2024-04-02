@@ -135,7 +135,8 @@ mixin ShopifyVariantMixin on ProductVariantMixin {
             var options = List<String>.from(attr.options!);
 
             var selectedValue = mapAttribute![attr.name!] ?? '';
-
+             print("atrributeeeeeeeeeeeeeeeeeee");
+               print(options);
             listWidget.add(
               BasicSelection(
                 options: options,

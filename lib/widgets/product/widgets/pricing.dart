@@ -77,9 +77,9 @@ class ProductPricing extends StatelessWidget {
           Text(
             product.type == 'grouped'
                 ? ''
-                :product!.price!,
-                //  PriceTools.getPriceProduct(product, currencyRate, currency,
-                //     onSale: false)!,
+                :
+                 PriceTools.getPriceProduct(product, currencyRate, currency,
+                    onSale: false)!,
             style: Theme.of(context)
                 .textTheme
                 .bodySmall!
