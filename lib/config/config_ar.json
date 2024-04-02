@@ -586,8 +586,13 @@
                     "name": "العلامات التجارية"
                 },
                 {
-                    "parent": "gid://shopify/Collection/473210716449",
-                    "category": "gid://shopify/Collection/464209412385",
+                    "image": "",
+                    "category": "gid://shopify/Collection/453699371297",
+                    "name": "الخداشات"
+                },
+                {
+                    "parent": "gid://shopify/Collection/453699371297",
+                    "category": "gid://shopify/Collection/464209150241",
                     "image": ""
                    
                 },

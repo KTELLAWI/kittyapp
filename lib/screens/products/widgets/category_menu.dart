@@ -54,7 +54,7 @@ class StateProductCategoryMenu extends State<ProductCategoryMenu> {
 
 
  if(categories.length== 0)
-   return SizedBox(height:2);
+   return  SizedBox(height:2);
     return
    
      Container(
