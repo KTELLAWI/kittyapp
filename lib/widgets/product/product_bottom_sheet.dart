@@ -336,14 +336,16 @@ class ExpandingBottomSheetState extends State<ExpandingBottomSheet>
                     ),
                   Container(
                     // Accounts for the overflow number
-                    width: numProducts < 1
-                        ? _width - 50.0
-                        : numProducts > 3
-                            ? _width - 70.0
-                            : _width - 80.0,
+                    width:0.0,
+                    color:Colors.red,
+                    // numProducts < 1
+                        // ? _width - 50.0
+                        // : numProducts > 3
+                        //     ? _width - 70.0
+                        //     : _width - 80.0,
                     height: _kCartHeight,
                     padding: const EdgeInsets.symmetric(vertical: 8.0),
-                    child: ProductThumbnailRow(),
+                    child: SizedBox(),//ProductThumbnailRow(),
                   ),
 
                   // more extra product
@@ -385,10 +387,10 @@ class ExpandingBottomSheetState extends State<ExpandingBottomSheet>
       button: true,
       value: S.of(context).shoppingCartItems(totalCartQuantity.toString()),
       child: Container(
-        width: _widthAnimation.value,
+        width:75.0, //_widthAnimation.value,
         height: _heightAnimation.value,
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.background,
+          color:Theme.of(context).colorScheme.background,
           borderRadius: Tools.isRTL(context)
               ? const BorderRadius.only(
                   topRight: Radius.circular(25.0),
