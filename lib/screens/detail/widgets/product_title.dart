@@ -30,10 +30,13 @@ class _ProductTitleState extends BaseScreen<ProductTitle> {
   String? price;
   ProductVariation? productVariation;
   String? dateOnSaleTo;
+    String? tammaraPrice;
+
 
   @override
   void afterFirstLayout(BuildContext context) async {
     getProductPrice();
+   
   }
 
   // ignore: always_declare_return_types
@@ -51,6 +54,12 @@ class _ProductTitleState extends BaseScreen<ProductTitle> {
           : isNotBlank(widget.product!.price)
               ? widget.product!.price
               : widget.product!.regularPrice;
+              tammaraPrice=  productVariation != null &&
+              (productVariation?.price?.isNotEmpty ?? false)
+          ? (double.parse(productVariation!.price!) / 4).toStringAsFixed(2) 
+           : isNotBlank(widget.product!.price)
+              ? (double.parse(widget.product!.price!) / 4).toStringAsFixed(2) 
+              : (double.parse(widget.product!.regularPrice!) / 4).toStringAsFixed(2) ;
 
       /// update the Sale price
       if (onSale) {
@@ -76,7 +85,6 @@ class _ProductTitleState extends BaseScreen<ProductTitle> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final tammaraPrice = price != null ? (double.parse(price!) / 4).toStringAsFixed(2) : '0.00';
     productVariation = Provider.of<ProductModel>(context).selectedVariation;
     getProductPrice();
 
