@@ -399,13 +399,16 @@ class ProductsScreenState extends State<ProductsScreen>
                             isSearch: true,
                           )
                         },
-                        bottomSheet: (Services()
-                                    .widget
-                                    .enableShoppingCart(null) &&
-                                !ServerConfig().isListingType &&
-                                showBottomCornerCart)
-                            ? ExpandingBottomSheet(hideController: _controller)
-                            : null,
+                        bottomSheet: 
+                        //(
+                          // Services()
+                          //           .widget
+                          //           .enableShoppingCart(null) &&
+                          //       !ServerConfig().isListingType &&
+                          //       showBottomCornerCart)
+                          //   ? ExpandingBottomSheet(hideController: _controller)
+                          //   : 
+                            null, //)
                       );
                     }
                     return backdrop(
@@ -429,7 +432,7 @@ class ProductsScreenState extends State<ProductsScreen>
       routeName: widget.routeName ?? RouteList.backdrop,
       child: buildMain,
     );
-
+ print("ggggggggggggggggggggggggggggggggg");
     return kIsWeb
         ? WillPopScope(
             onWillPop: () async {

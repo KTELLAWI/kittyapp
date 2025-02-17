@@ -76,3 +76,6 @@ pubspec.lock
 /lib/generated_plugin_registrant.dart
 coverage
 app-3-11.apk
+
+# FVM Version Cache
+.fvm/
