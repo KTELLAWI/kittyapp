@@ -12,7 +12,7 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  flutter:
+  flutter:f
     sdk: flutter
 
   inspireui: 1.6.0
