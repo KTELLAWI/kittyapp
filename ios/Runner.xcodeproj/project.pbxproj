@@ -951,7 +951,6 @@
 					"$(inherited)",
 					"-framework",
 					Flutter,
-					"-allowProvisioningUpdates",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "online.digistacks.kitty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
