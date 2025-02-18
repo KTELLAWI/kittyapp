@@ -399,7 +399,7 @@ class ProductsScreenState extends State<ProductsScreen>
                             isSearch: true,
                           )
                         },
-                        bottomSheet: 
+                        bottomSheet: ExpandingBottomSheet(hideController: _controller)
                         //(
                           // Services()
                           //           .widget
@@ -408,7 +408,7 @@ class ProductsScreenState extends State<ProductsScreen>
                           //       showBottomCornerCart)
                           //   ? ExpandingBottomSheet(hideController: _controller)
                           //   : 
-                            null, //)
+                           // null, //)
                       );
                     }
                     return backdrop(

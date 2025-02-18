@@ -368,18 +368,18 @@ class _SimpleLayoutState extends State<SimpleLayout>
                             ],
                           ),
                         ),
-                        // if (Services().widget.enableShoppingCart(
-                        //         product.copyWith(isRestricted: false)) &&
-                        //     kAdvanceConfig.showBottomCornerCart)
-                        //   Align(
-                        //     alignment: Tools.isRTL(context)
-                        //         ? Alignment.bottomLeft
-                        //         : Alignment.bottomRight,
-                        //     child: ExpandingBottomSheet(
-                        //       hideController: _hideController,
-                        //       onInitController: _onInitController,
-                        //     ),
-                        //   ),
+                        if (Services().widget.enableShoppingCart(
+                                product.copyWith(isRestricted: false)) &&
+                            kAdvanceConfig.showBottomCornerCart)
+                          Align(
+                            alignment: Tools.isRTL(context)
+                                ? Alignment.bottomLeft
+                                : Alignment.bottomRight,
+                            child: ExpandingBottomSheet(
+                              hideController: _hideController,
+                              onInitController: _onInitController,
+                            ),
+                          ),
                       ],
                     ),
                   ),
