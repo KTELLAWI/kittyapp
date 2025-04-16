@@ -1,0 +1,51 @@
+name: flux_firebase
+description: A Firebase package for FluxStore apps
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  fstore:
+    path: ../../
+  inspireui: 2.2.1
+
+  # FIREBASE PACKAGES
+  firebase_core: 3.3.0
+  firebase_analytics: 11.2.1
+  firebase_auth: 5.1.4
+  firebase_remote_config: 5.0.4
+  firebase_dynamic_links: 6.0.4
+  cloud_firestore: 5.2.1
+  firebase_remote_config_web: 1.6.12
+
+  # Additional Firebase packages. To prevent unexpected upgrade.
+  firebase_core_platform_interface: 5.2.0
+  firebase_analytics_platform_interface: 4.2.1
+  firebase_auth_platform_interface: 7.4.3
+  firebase_remote_config_platform_interface: 1.4.40
+  firebase_dynamic_links_platform_interface: 0.2.6+40
+  cloud_firestore_platform_interface: 6.3.1
+  firebase_messaging_platform_interface: 4.5.42
+
+  # PUSH NOTIFICATION
+  firebase_messaging: 15.0.4
+
+  # OTHERS
+  intl: any
+  timeago: 3.6.1
+  flutter_local_notifications: 17.2.2
+  share: 2.0.4
+  provider: 6.1.2
+  collection: any
+  easy_debounce: 2.0.3
+  jumping_dot: 0.0.6
+  flutter_linkify: 6.0.0
+
+flutter:
+  uses-material-design: true
+

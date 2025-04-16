@@ -36,7 +36,7 @@ import 'shopify_query.dart';
 import 'shopify_storage.dart';
 
 const _apiVersion = '2023-04';
-
+æ
 class ShopifyService extends BaseServices {
   ShopifyService({
     required String domain,

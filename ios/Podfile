@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '13.0'
+platform :ios, '14.0'
 
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
@@ -30,10 +30,10 @@ flutter_ios_podfile_setup
 target 'Runner' do
   use_frameworks!
   use_modular_headers!
+
+  # This is just a temporary solution to fix the iOS build issue. We need to remove this line after the author fixes this [issue](https://github.com/natintosh/plugin_libphonenumber/issues/35)
   pod 'PhoneNumberKit', '3.8.0'
-
-
-
+  
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 end
 
@@ -44,6 +44,13 @@ post_install do |installer|
       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
       config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64 i386"
 
+      ## Fix issue "Error 'DT_TOOLCHAIN_DIR" - https://github.com/CocoaPods/CocoaPods/issues/12012#issuecomment-1653051943
+      xcconfig_path = config.base_configuration_reference.real_path
+      xcconfig = File.read(xcconfig_path)
+      xcconfig_mod = xcconfig.gsub(/DT_TOOLCHAIN_DIR/, "TOOLCHAIN_DIR")
+      File.open(xcconfig_path, "w") { |file| file << xcconfig_mod }
+
+      ## permission handler
       if target.name == 'permission_handler_apple'
         config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= [
           '$(inherited)',
@@ -66,7 +73,7 @@ end
 
 # target 'OneSignalNotificationServiceExtension' do
 #   use_frameworks!
-#   pod 'OneSignalXCFramework', '>= 3.4.3', '< 4.0'
+#   pod 'OneSignalXCFramework', '>= 5.0.0', '< 6.0'
 # end
 
 # Fixes Flutter.framework in shell script build phase '[CP] Embed Pods Frameworks' error
